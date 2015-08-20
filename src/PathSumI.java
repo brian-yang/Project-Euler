@@ -9,51 +9,51 @@ import java.util.StringTokenizer;
  * @author ABCD
  */
 public class PathSumI {
-    public static void main(String[] args) throws IOException{    
-       Scanner input = new Scanner(new File("pascal.txt"));
-        
-       ArrayList<ArrayList<Integer>> triangle = new ArrayList<ArrayList<Integer>>();
-        
-       StringTokenizer st;
-       ArrayList<Integer> row = new ArrayList<Integer>();       
-       
-       while (input.hasNextLine()) {
-           st = new StringTokenizer(input.nextLine());
-           while (st.hasMoreTokens()) {
-               row.add(Integer.parseInt(st.nextToken()));
-           }
-           triangle.add(row);
-           row = new ArrayList<Integer>();
-       }
-       
-       int indexTriangle = triangle.size() - 1;
-       
-       while (indexTriangle - 1 >= 0) {
-           triangle.add(indexTriangle - 1, compareRows(triangle.get(indexTriangle -1), triangle.get(indexTriangle)));
-           triangle.remove(indexTriangle);
-           indexTriangle--;
-       }
-       System.out.println(triangle);
-       
-       input.close();
-    }
-    public static ArrayList<Integer> compareRows(ArrayList<Integer> rowA, ArrayList<Integer> rowB) {
-        
-        int indexA = 0;
-        int indexB = 0;
-        
-        while (indexA < rowA.size()) {
-            int inc = Math.max(rowB.get(indexB), rowB.get(indexB + 1));
-            int newElement = rowA.get(indexA) + inc;
-            rowA.remove(indexA);
-            rowA.add(indexA, newElement);
-            indexA++;
-            indexB++;
-        } 
-        
-        return rowA;
-    }
-    
+	public static void main(String[] args) throws IOException{
+		Scanner input = new Scanner(new File("pascal.txt"));
+
+		ArrayList<ArrayList<Integer>> triangle = new ArrayList<ArrayList<Integer>>();
+
+		StringTokenizer st;
+		ArrayList<Integer> row = new ArrayList<Integer>();
+
+		while (input.hasNextLine()) {
+			st = new StringTokenizer(input.nextLine());
+			while (st.hasMoreTokens()) {
+				row.add(Integer.parseInt(st.nextToken()));
+			}
+			triangle.add(row);
+			row = new ArrayList<Integer>();
+		}
+
+		int indexTriangle = triangle.size() - 1;
+
+		while (indexTriangle - 1 >= 0) {
+			triangle.add(indexTriangle - 1, compareRows(triangle.get(indexTriangle -1), triangle.get(indexTriangle)));
+			triangle.remove(indexTriangle);
+			indexTriangle--;
+		}
+		System.out.println(triangle);
+
+		input.close();
+	}
+	public static ArrayList<Integer> compareRows(ArrayList<Integer> rowA, ArrayList<Integer> rowB) {
+
+		int indexA = 0;
+		int indexB = 0;
+
+		while (indexA < rowA.size()) {
+			int inc = Math.max(rowB.get(indexB), rowB.get(indexB + 1));
+			int newElement = rowA.get(indexA) + inc;
+			rowA.remove(indexA);
+			rowA.add(indexA, newElement);
+			indexA++;
+			indexB++;
+		}
+
+		return rowA;
+	}
+
 }
 
 /**
@@ -73,4 +73,4 @@ pascal.txt contents:
 91 71 52 38 17 14 91 43 58 50 27 29 48
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
-*/
+ */
