@@ -9,8 +9,7 @@ import java.io.IOException;
 public class GridProduct {
 	public static void main(String[] args) throws IOException{
 
-		// Checks the text files in NetBeansProjects/ProjectEuler
-		BufferedReader f = new BufferedReader(new FileReader("grid.txt")); // deleted file
+		BufferedReader f = new BufferedReader(new FileReader("grid.txt"));
 		// input file name goes above
 		String[] line;
 
