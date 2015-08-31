@@ -9,7 +9,7 @@ import java.io.IOException;
 public class GridProduct {
 	public static void main(String[] args) throws IOException{
 
-		BufferedReader f = new BufferedReader(new FileReader("/home/brian/workspace/Project-Euler/assets/grid.txt"));
+		BufferedReader f = new BufferedReader(new FileReader("../assets/grid.txt"));
 		// input file name goes above
 		String[] line;
 

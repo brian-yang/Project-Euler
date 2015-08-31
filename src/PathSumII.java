@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 public class PathSumII {
 
 	public static void main(String[] args) throws IOException{
-		Scanner input = new Scanner(new File("/home/brian/workspace/Project-Euler/assets/triangle.txt"));
+		Scanner input = new Scanner(new File("../assets/triangle.txt"));
 
 		ArrayList<ArrayList<Integer>> triangle = new ArrayList<ArrayList<Integer>>();
 
