@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 
 public class PrimeSummation {
 
@@ -8,26 +7,75 @@ public class PrimeSummation {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(sumPrimes(LIMIT));
+		// VERSION 1 -- FASTER (~90ms)
+		long startTime = System.currentTimeMillis();
+
+		System.out.println(sumPrimesv1(LIMIT));
+
+		long endTime = System.currentTimeMillis();
+		System.out.println(endTime - startTime);
+
+		// VERSION 2 (~500ms)
+		startTime = System.currentTimeMillis();
+
+		System.out.println(sumPrimesv2(LIMIT));
+
+		endTime = System.currentTimeMillis();
+		System.out.println(endTime - startTime);
 	}
 
-	public static BigInteger sumPrimes(int n) {
+	// VERSION 1 - SIEVE OF ERATOSTHENES
+	public static long sumPrimesv1(int n) {
 		int[] marked = new int[n];
-		BigInteger value = BigInteger.valueOf(3);
-		BigInteger s = BigInteger.valueOf(2);
-		BigInteger i = BigInteger.valueOf(0);
+		long value = 3;
+		long s = 2;
+		long i = 0;
 
-		while (value.compareTo(BigInteger.valueOf(n)) == -1) { // is less than?
-			if (marked[value.intValue()] == 0) {
-				s = s.add(value);
+		while (value < n) {
+			if (marked[(int) value] == 0) {
+				s += value;
 				i = value;
-				while (i.compareTo(BigInteger.valueOf(n)) == -1) { // is less than?
-					marked[i.intValue()] = 1;
-					i = i.add(value);
+				while (i < n) {
+					marked[(int) i] = 1;
+					i += value;
 				}
 			}
-			value = value.add(BigInteger.valueOf(2));
+			value += 2;
 		}
 		return s;
+	}
+
+	// VERSION 2 - BRUTE FORCE OPTIMIZED
+	public static long sumPrimesv2(int n) {
+
+		// variables
+		long result = 0;
+
+		// algorithm
+		for (int number = 0; number < n; number++) {
+			if (isPrime(number)) {
+				result += number;
+			}
+		}
+		return result;
+	}
+
+	// functions
+	// checks if a number is a prime
+	public static boolean isPrime(int number) {
+		if (number < 2) {
+			return false;
+		} else if (number == 2) {
+			return true;
+		} else if (number % 2 == 0) {
+			return false;
+		} else {
+			for (int divisor = 3; divisor <= Math.sqrt(number); divisor += 2) {
+				if (number % divisor == 0) {
+					return false;
+				}
+			}
+			return true;
+		}
 	}
 }
