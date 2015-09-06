@@ -27,16 +27,16 @@ public class PrimeSummation {
 	// VERSION 1 - SIEVE OF ERATOSTHENES
 	public static long sumPrimesv1(int n) {
 		int[] marked = new int[n];
-		long value = 3;
+		int value = 3;
 		long s = 2;
-		long i = 0;
+		int i = 0;
 
 		while (value < n) {
-			if (marked[(int) value] == 0) {
+			if (marked[value] == 0) {
 				s += value;
 				i = value;
 				while (i < n) {
-					marked[(int) i] = 1;
+					marked[i] = 1;
 					i += value;
 				}
 			}
