@@ -5,11 +5,13 @@ import java.util.Map;
 
 public class OneThousandFirstPrime {
 
+	private static final int PRIME_INDEX = 10001;
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(findPrime(10001));
+		System.out.println(findPrime(PRIME_INDEX));
 	}
 
 	/* Sieve of Eratosthenes (modified by ABCD to find 10001st prime
