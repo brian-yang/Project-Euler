@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  */
 public class PathSumI {
 	public static void main(String[] args) throws IOException{
-		Scanner input = new Scanner(new File("../assets/pascal.txt"));
+		Scanner input = new Scanner(new File("assets/pascal.txt"));
 
 		ArrayList<ArrayList<Integer>> triangle = new ArrayList<ArrayList<Integer>>();
 

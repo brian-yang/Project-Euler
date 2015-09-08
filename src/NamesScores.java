@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 public class NamesScores{
 	public static void main(String[] args) throws IOException{
 
-		Scanner input = new Scanner(new File("../assets/names.txt"));
+		Scanner input = new Scanner(new File("assets/names.txt"));
 
 		StringTokenizer st;
 		ArrayList<String> indList = new ArrayList<String>();
