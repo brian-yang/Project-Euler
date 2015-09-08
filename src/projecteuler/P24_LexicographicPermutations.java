@@ -1,9 +1,10 @@
+package projecteuler;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class LexicographicPermutations {
+public class P24_LexicographicPermutations {
 
 	/**
 	 * @param args

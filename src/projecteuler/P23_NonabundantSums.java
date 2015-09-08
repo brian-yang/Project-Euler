@@ -1,7 +1,8 @@
+package projecteuler;
 import java.util.HashSet;
 import java.util.Set;
 
-public class NonabundantSums {
+public class P23_NonabundantSums {
 
 	public static void main(String[] args) {
 		int sum = 0;

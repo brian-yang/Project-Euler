@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class SmallestMultiple {
+public class P05_SmallestMultiple {
 
 	/**
 	 * @param args

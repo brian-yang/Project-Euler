@@ -1,7 +1,8 @@
+package projecteuler;
 import java.math.BigInteger;
 
 
-public class DigitFifthPowers {
+public class P30_DigitFifthPowers {
 
 	/**
 	 * @param args

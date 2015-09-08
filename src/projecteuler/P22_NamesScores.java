@@ -1,3 +1,4 @@
+package projecteuler;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.StringTokenizer;
  *
  * @author ABCD
  */
-public class NamesScores{
+public class P22_NamesScores{
 	public static void main(String[] args) throws IOException{
 
 		Scanner input = new Scanner(new File("assets/names.txt"));

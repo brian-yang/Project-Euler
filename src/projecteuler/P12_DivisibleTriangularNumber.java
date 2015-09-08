@@ -1,8 +1,9 @@
+package projecteuler;
 /**
  *
  * @author ABCD
  */
-public class DivisibleTriangularNumber {
+public class P12_DivisibleTriangularNumber {
 
 	/**
 	 * @param args the command line arguments

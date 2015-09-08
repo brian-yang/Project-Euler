@@ -1,3 +1,4 @@
+package projecteuler;
 /**
  *
  * @author ABCD
@@ -6,7 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class GridProduct {
+public class P11_GridProduct {
 	public static void main(String[] args) throws IOException{
 
 		BufferedReader f = new BufferedReader(new FileReader("assets/grid.txt"));

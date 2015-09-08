@@ -1,9 +1,10 @@
+package projecteuler;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 
-public class LargestProductSeries {
+public class P08_LargestProductSeries {
 
 	/**
 	 * @param args

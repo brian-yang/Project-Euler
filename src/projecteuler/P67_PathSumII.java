@@ -1,16 +1,14 @@
+package projecteuler;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-/**
- *
- * @author ABCD
- */
-public class PathSumI {
+public class P67_PathSumII {
+
 	public static void main(String[] args) throws IOException{
-		Scanner input = new Scanner(new File("assets/pascal.txt"));
+		Scanner input = new Scanner(new File("assets/triangle.txt"));
 
 		ArrayList<ArrayList<Integer>> triangle = new ArrayList<ArrayList<Integer>>();
 

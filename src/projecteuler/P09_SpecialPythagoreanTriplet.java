@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class SpecialPythagoreanTriplet {
+public class P09_SpecialPythagoreanTriplet {
 
 	/**
 	 * @param args

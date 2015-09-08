@@ -1,4 +1,5 @@
-public class LargestPalindromeProduct {
+package projecteuler;
+public class P04_LargestPalindromeProduct {
 
 	/**
 	 * @param args

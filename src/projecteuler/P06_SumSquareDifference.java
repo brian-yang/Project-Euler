@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class SumSquareDifference {
+public class P06_SumSquareDifference {
 
 	/**
 	 * @param args

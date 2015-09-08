@@ -1,7 +1,8 @@
+package projecteuler;
 import java.math.BigInteger;
 
 
-public class FactorialDigitSum {
+public class P20_FactorialDigitSum {
 
 	/**
 	 * @param args

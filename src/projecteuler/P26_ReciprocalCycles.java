@@ -1,6 +1,7 @@
+package projecteuler;
 import java.util.ArrayList;
 
-class ReciprocalCycles {
+class P26_ReciprocalCycles {
 	public static void main(String[] args) {
 		int answer = 0;
 		int repeat = 0;

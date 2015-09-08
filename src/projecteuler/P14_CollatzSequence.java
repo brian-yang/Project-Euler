@@ -1,3 +1,4 @@
+package projecteuler;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -5,7 +6,7 @@ import java.util.Map;
  *
  * @author ABCD
  */
-public class CollatzSequence {
+public class P14_CollatzSequence {
 	public static void main(String[] args) {
 
 		double bigCollatz = 3;

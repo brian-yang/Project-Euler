@@ -1,7 +1,8 @@
+package projecteuler;
 import java.math.BigInteger;
 
 
-public class OneThousandFibonacci {
+public class P25_OneThousandFibonacci {
 
 	/**
 	 * @param args

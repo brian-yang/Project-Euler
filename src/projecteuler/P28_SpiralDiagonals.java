@@ -1,8 +1,9 @@
+package projecteuler;
 /**
  *
  * @author ABCD
  */
-public class SpiralDiagonals {
+public class P28_SpiralDiagonals {
 	public static void main(String[] args) {
 
 		int nums = 0;

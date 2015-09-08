@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class EvenFibonacciNumbers {
+public class P02_EvenFibonacciNumbers {
 
 	/**
 	 * @param args

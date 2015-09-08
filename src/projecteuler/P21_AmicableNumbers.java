@@ -1,8 +1,9 @@
+package projecteuler;
 /**
  * 
  * @author ABCD
  */
-public class AmicableNumbers {
+public class P21_AmicableNumbers {
 	public static void main(String[] args) {
 		int amicableSum = 0;
 

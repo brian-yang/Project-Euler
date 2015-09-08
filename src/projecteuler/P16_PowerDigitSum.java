@@ -1,7 +1,8 @@
+package projecteuler;
 import java.math.BigInteger;
 
 
-public class PowerDigitSum {
+public class P16_PowerDigitSum {
 
 	/**
 	 * @param args

@@ -1,10 +1,11 @@
+package projecteuler;
 import java.math.BigInteger;
 
 /**
  *
  * @author ABCD
  */
-public class LargeSum {
+public class P13_LargeSum {
 	public static void main(String[] args) {
 
 		BigInteger a = BigInteger.ZERO;

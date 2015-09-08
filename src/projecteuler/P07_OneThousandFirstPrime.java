@@ -1,9 +1,10 @@
+package projecteuler;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class OneThousandFirstPrime {
+public class P07_OneThousandFirstPrime {
 
 	private static final int PRIME_INDEX = 10001;
 

@@ -1,4 +1,5 @@
-public class LargestPrimeFactor {
+package projecteuler;
+public class P03_LargestPrimeFactor {
 
 	private static final long PRIME = 600851475143L;
 

@@ -1,3 +1,4 @@
+package projecteuler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashSet;
@@ -7,7 +8,7 @@ import java.util.List;
  *
  * @author ABCD
  */
-public class DistinctPowers {
+public class P29_DistinctPowers {
 	public static void main(String[] args) {
 		List<Integer> a = new ArrayList<Integer>();
 		List<Integer> b = new ArrayList<Integer>();

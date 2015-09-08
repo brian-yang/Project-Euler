@@ -1,6 +1,7 @@
+package projecteuler;
 import java.math.BigInteger;
 
-public class LatticePaths {
+public class P15_LatticePaths {
 
 	/**
 	 * @param args

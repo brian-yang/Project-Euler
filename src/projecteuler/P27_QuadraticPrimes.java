@@ -1,4 +1,5 @@
-public class QuadraticPrimes {
+package projecteuler;
+public class P27_QuadraticPrimes {
 
 	/**
 	 * @param args

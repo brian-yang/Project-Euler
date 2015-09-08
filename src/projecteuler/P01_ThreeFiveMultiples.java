@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class ThreeFiveMultiples {
+public class P01_ThreeFiveMultiples {
 
 	private static final int LIMIT = 1000;
 

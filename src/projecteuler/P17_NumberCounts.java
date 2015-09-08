@@ -1,4 +1,5 @@
-public class NumberCounts {
+package projecteuler;
+public class P17_NumberCounts {
 
 	private static final int[] ONES = {3, 3, 5, 4, 4, 3, 5, 5, 4}; // digits
 	private static final int[] TEN_TO_NINETEEN = {3, 6, 6, 8, 8, 7, 7, 9, 8, 8}; // 10-19

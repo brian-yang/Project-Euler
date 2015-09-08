@@ -1,5 +1,6 @@
+package projecteuler;
 
-public class PrimeSummation {
+public class P10_PrimeSummation {
 
 	private static final int LIMIT = 2_000_000;
 

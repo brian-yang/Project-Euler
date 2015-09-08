@@ -1,8 +1,9 @@
+package projecteuler;
 /**
  *
  * @author ABCD
  */
-public class CountingSundays {
+public class P19_CountingSundays {
 	public static void main(String[] args) {
 
 		Year year = new Year();
